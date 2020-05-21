@@ -2,7 +2,7 @@ package com.inheritance.instruments;
 
 public class Piano extends AbstractInstruments{
 
-    public boolean repaired = true;
+    public boolean repaired;
 
     public Piano(VolumeIstr volumeIstr, SizeIstr sizeIstr, boolean repaired){
         super(sizeIstr, volumeIstr);
@@ -12,8 +12,10 @@ public class Piano extends AbstractInstruments{
     public boolean getCanPlay(){
         if (repaired = true){
             System.out.println("This piano can play.");
+        }else {
+            System.out.println("This piano can't play");
         }
-        return repaired;
+        return true;
     }
 
     public SizeIstr getSizeIstr(){

@@ -10,7 +10,14 @@ public class InheritanceExampleTwo {
         piano1.playIstr();
         piano1.stopPlayIstr();
 
-        
+        System.out.println();
+        Piano piano2 = new Piano(VolumeIstr.QUIET, SizeIstr.MEDIUM, false);
+        System.out.println(piano2);
+        piano1.getCanPlay();
+
+        System.out.println();
+        Piano piano3 = new Piano(VolumeIstr.LOUD, SizeIstr.SMALL, true);
+        System.out.println(piano3);
 
     }
 }
