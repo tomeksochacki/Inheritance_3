@@ -1,6 +1,6 @@
 package com.inheritance.instruments;
 
-public class AbstractInstruments {
+public abstract class AbstractInstruments {
 
     public SizeIstr sizeIstr;
     public VolumeIstr volumeIstr;
@@ -10,7 +10,7 @@ public class AbstractInstruments {
         this.volumeIstr = volumeIstr;
     }
 
-    public SizeIstr getSize(){
+    public SizeIstr getSizeIstr(){
         return sizeIstr;
     }
 
@@ -26,6 +26,7 @@ public class AbstractInstruments {
         this.volumeIstr = volumeIstr;
     }
 
-    public void playIstr()
+    public abstract boolean playIstr();
+    public abstract boolean stopPlayIstr();
 
 }
